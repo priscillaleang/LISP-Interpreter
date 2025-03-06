@@ -520,8 +520,8 @@ if __name__ == "__main__":
     sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
     import schemerepl
 
-    # schemerepl.SchemeREPL(
-    #     sys.modules[__name__], use_frames=True, verbose=False, global_frame=global_frame
-    # ).cmdloop()
+    schemerepl.SchemeREPL(
+        sys.modules[__name__], use_frames=True, verbose=False, global_frame=global_frame
+    ).cmdloop()
 
-    print(parse(tokenize("(list? 7)")))
+    # print(parse(tokenize("(list? 7)")))
